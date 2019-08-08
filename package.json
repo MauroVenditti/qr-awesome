@@ -2,12 +2,13 @@
     "name": "qr-awesome",
     "version": "0.1.0",
     "description": "Generador de codigos QR",
-    "main": "build/index.js",
+    "main": "build/awesome-qr-node.js",
     "scripts": {
-        "lint": "eslint lib/index.js",
+        "lint": "eslint lib/awesome-qr-node.js",
         "prebuild": "npm run lint",
         "build": "babel lib --out-dir build",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prepublish": "npm run test"
     },
     "repository": {
         "type": "git",
